@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 此时不能直接引用main.js文件，因为main.js文件中包含CommonJS的代码，而浏览器根本不认识CommonJS代码，所以需要先用webpack模块打包工具将其打包，此时就能打包出浏览器能辨别的代码，再引用这个打包生成的文件即可 -->
+  <script src="dist/bundle.js"></script>
+
+</body>
+
+</html>
